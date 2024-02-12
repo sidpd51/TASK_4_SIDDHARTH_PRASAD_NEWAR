@@ -21,13 +21,13 @@
     <div class="container-fluid w-80 p-4 ms-auto me-0">
       <!-- 1st row  -->
       <div class="row mx-4 mb-4 gy-lg-0 gy-4">
+        <!-- today's sales -->
         <div class="col-lg-8 px-0">
-          <!-- today's sales -->
           <div class="today-sales d-flex align-items-center flex-column justify-content-between  rounded-4 shadow p-3">
             <!-- inner heading  -->
             <div class="today-sales-heading d-flex justify-content-between px-3 pt-3 mb-4 w-100">
               <div class="today-sales-heading-left">
-                <h4 class="h4 ">Today's Sales</h4>
+                <h4 class="h4 fw-semibold">Today's Sales</h4>
                 <p class="sales-paragraph">Sales summery</p>
               </div>
               <div class="today-sales-heading-right">
@@ -77,12 +77,15 @@
             </div>
           </div>
         </div>
+        <!-- visitor insights  -->
         <div class="col-lg-4 px-0">
-          <div class="d-flex visitor-insights rounded-4 shadow ms-lg-4 w-100">
+          <div class="visitor-insights rounded-4 shadow ms-lg-4 p-3">
+            <h4 class="h4 p-3 fw-semibold">Visitor Insights</h4>
             <div class="accordion accordion-flush" id="accordionFlushExample">
+              <!-- 1st item  -->
               <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                <h2 class="accordion-header ">
+                  <button class="accordion-button rounded-2  collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                     Lorem Ipsum
                   </button>
                 </h2>
@@ -90,48 +93,192 @@
                   <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
                 </div>
               </div>
-              <div class="accordion-item">
+              <!-- 2nd item  -->
+              <div class="accordion-item mt-1 ">
                 <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  <button class="accordion-button rounded-2  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                     Lorem Ipsum
                   </button>
                 </h2>
                 <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine.</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- 2nd row  -->
+
+      
+      <!--! 2nd row  -->
+
       <div class="row mx-0 mx-4 mb-4 gy-lg-0 gy-4">
-        <div class="col-lg-6 px-0">
-          <div class="d-flex rounded-4 shadow visitor-list">visitor list</div>
+        <!-- visitor list  -->
+        <div class="col-lg-6 px-0 h-100">
+          <div class=" rounded-4 shadow visitor-list p-4">
+            <h4 class="h4 px-2 py-2 fw-semibold">Visitor List</h4> 
+            <table class="table caption-top table-color">
+              <thead>
+                <tr class="bg-light">
+                  <th class="tb-heading fw-lighter" scope="col">#</th>
+                  <th class="tb-heading fw-lighter" scope="col">Name</th>
+                  <th class="tb-heading fw-lighter" scope="col">Join Date</th>
+                  <th class="tb-heading fw-lighter" scope="col">Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" class="th">01</th>
+                  <td>Stephen P. Osborn</td>
+                  <td>17 Jan, 2023</td>
+                  <td><img src="./assets/images/Vector (4).png" alt="" class="me-3"><img src="./assets/images/Vector (5).png" alt=""></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="th">02</th>
+                  <td>Odessa G. Mettler</td>
+                  <td>13 Feb, 2023</td>
+                  <td><img src="./assets/images/Vector (4).png" alt="" class="me-3"><img src="./assets/images/Vector (5).png" alt=""></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="th">03</th>
+                  <td>Judith H. Richards</td>
+                  <td>13 Feb, 2023</td>
+                  <td><img src="./assets/images/Vector (4).png" alt="" class="me-3"><img src="./assets/images/Vector (5).png" alt=""></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="th">04</th>
+                  <td>Jack B. Perez</td>
+                  <td>10 Feb, 2023</td>
+                  <td><img src="./assets/images/Vector (4).png" alt="" class="me-3"><img src="./assets/images/Vector (5).png" alt=""></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="th">05</th>
+                  <td>Chris B. Ryant</td>
+                  <td>10x Feb, 2023</td>
+                  <td><img src="./assets/images/Vector (4).png" alt="" class="me-3"><img src="./assets/images/Vector (5).png" alt=""></td>
+                </tr>
+              </tbody>
+            </table>
+            <a href="#read-more" class="d-block text-center text-decoration-none ">Read More</a>
+          </div>
         </div>
+        <!-- top-product  -->
         <div class="col-lg-6 px-0">
-          <div class="d-flex rounded-4 shadow top-product ms-lg-4">
-            top-product
+          <div class="rounded-4 shadow top-product ms-lg-4 p-4 h-100">
+            <h4 class="h4 px-2 py-2 fw-semibold">Top Products</h4>
+            <table class="table w-75">
+              <thead>
+                <tr>
+                  <th class="tb-heading fw-lighter" scope="col">#</th>
+                  <th class="tb-heading fw-lighter" scope="col">Name</th>
+                  <th class="tb-heading fw-lighter" scope="col">Popularity</th>
+                  <th class="tb-heading fw-lighter" scope="col">Sales</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" class="th">01</th>
+                  <td>Home Decor Range</td>
+                  <td>
+                    <div class="progress progress-1-2 mt-2" role="progressbar" aria-label="Success example" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar progress-1" style="width: 45%"></div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="progress-1-per rounded-3 d-flex justify-content-center fs-6 px-0">
+                      45%
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="th">02</th>
+                  <td>Home Decor Range</td>
+                  <td>
+                    <div class="progress progress-2-2 mt-2" role="progressbar" aria-label="Success example" aria-valuenow="29" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar progress-2" style="width: 29%"></div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="progress-2-per rounded-3 d-flex justify-content-center fs-6 px-0">
+                      29%
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="th">03</th>
+                  <td >Bathroom Essentials</td>
+                  <td>
+                    <div class="progress progress-3-2 mt-2" role="progressbar" aria-label="Success example" aria-valuenow="18" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar progress-3" style="width: 18%"></div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="progress-3-per rounded-3 d-flex justify-content-center fs-6 px-0">
+                      18%
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="th">04</th>
+                  <td >Apple Smartwatches</td>
+                  <td>
+                    <div class="progress progress-4-2 mt-2" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar progress-4" style="width: 25%"></div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="progress-4-per rounded-3 d-flex justify-content-center fs-6 px-0">
+                      25%
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
       <!-- 3rd row  -->
       <div class="row mx-0 mx-4 mb-4 gy-lg-0 gy-4">
+        <!-- col 1 -->
         <div class="col-lg-6 px-0">
-          <div class="d-flex rounded-4 shadow main-products"></div>
+          <div class="rounded-4 shadow main-products p-4"> 
+            <h5  class="h5  px-2 pt-2 mb-4 fw-semibold">Main Products</h5>
+            <div class="mb-0 pb-1">
+              <button class="btn product-btn  rounded-0" onclick="productOne()">Product-1</button>
+              <button class="btn product-btn  rounded-0" onclick="productTwo()">Product-2</button>
+            </div>
+            <hr class="m-0" >
+            <div class="product-review d-flex justify-content-between gap-5 pt-3">
+              <div class="img-container align-self-start">
+                <img src="./assets//images/dummy-image-square 1.png" alt="">
+              </div>
+              <div class="product-info">
+                <h5 class="product-heading" id="product-heading">What is this Product?</h5>
+                <p class="product-paragraph" id="product-paragraph">This is product one paragraph. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing.</p>
+                <button class="btn read-more rounded-1 product-btn">Read More</button>
+              </div>
+            </div>
+          </div>
+          
         </div>
+        <!-- col 2  -->
         <div class="col-lg-3 px-0">
-          <div class="d-flex rounded-4 shadow sales-mapping ms-lg-4">
-            <h4 class="h4"Sales Mapping by Country</h4>
-            <img class="img-fluid " src="" alt="">
+          <div class="rounded-4 shadow sales-mapping ms-lg-4 p-4 h-100">
+            <h5  class="h5 pt-2 pb-3 fw-semibold">Sales Mapping by Country</h5>
+            <img class="img-fluid " src="./assets/images/world.png" alt="">
           </div>
         </div>
-        <div class="col-lg-3 px-0">
-          <div class="d-flex rounded-4 shadow service-level ms-lg-4"></div>
+        <!-- col 3  -->
+        <div class="col-lg-3 px-0 h-100">
+            <div class="rounded-4 shadow sales-mapping ms-lg-4 p-4">
+              <h5  class="h5 pt-2 pb-3 fw-semibold">Volume vs Service Level</h5>
+              <img class="img-fluid " src="./assets/images/Volume.png" alt="">
+            </div>
         </div>
       </div>
     </div>
     <!-- js for bootstrap  -->
+    <script src="./assets//js/index.js"></script>
     <script src="./assets/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
   </body>
 </html>
