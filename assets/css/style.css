@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*,::after,::before{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --body-color: white;
+    --primary-color: #F8F9FA;
+    --secondary-color: #0F3659;
+    --tertiary-color: #5D5FEF;
+    --col-blue: #4079ED;
+    --col-title: #151D48;
+    --col-1: #FFE2E5;
+    --col-2: #FFF4DE;
+    --col-3: #DCFCE7;
+    --col-4: #F3E8FF;
+    --icon-1: #FA5A7D;
+    --icon-2: #FF947A;
+    --icon-3: #3CD856;
+    --icon-4: #BF83FF;
+    --sales-pgh: #737791;
+
+
+}
+
+body {
+    margin: 0;
+    background-color: var(--body-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+.today-sales,.visitor-insights,
+.visitor-list,.top-product,
+.main-products,.sales-mapping,.service-level {
+    min-height: 220px;
+    background-color:  var(--primary-color);
+
+}
+
+
+.d-flex {
+    align-items: center;
+}
+
+.w-80 {
+    width: 85%;
+}
+
+/* buttons  */
+.btn-primary {
+    border: 1px solid #C3D3E2;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.h4 {
+    color: var(--secondary-color);
+}
+
+
+.col-title {
+    color: var(--col-title)
+    font-size 
+}
+
+.col-color-1{
+    background-color: var(--col-1);
+    /* width: 100%; */
+}
+.col-color-2{
+    background-color: var(--col-2);
+    /* width: 100%; */
+}
+.col-color-3{
+    background-color: var(--col-3);
+    /* width: 100%; */
+}
+.col-color-4{
+    background-color: var(--col-4);
+    /* width: 100%; */
+}
+
+.icon-1 {
+    background-color: var(--icon-1);
+}
+.icon-2 {
+    background-color: var(--icon-2);
+}
+.icon-3 {
+    background-color: var(--icon-3);
+}
+.icon-4 {
+    background-color: var(--icon-4);
+}
+
+.col-subtitle-2 {
+    font-size: 0.75rem;
+    margin-bottom: 0;
+}
+
+.sales-paragraph {
+    color: #737791;
+    ;
+}
