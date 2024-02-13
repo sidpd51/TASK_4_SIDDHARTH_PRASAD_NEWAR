@@ -46,6 +46,10 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+input {
+    font: inherit;
+}
+
 .today-sales,.visitor-insights,
 .visitor-list,.top-product,
 .main-products,.sales-mapping,.service-level {
@@ -60,7 +64,7 @@ body {
 }
 
 .w-80 {
-    width: 90%;
+    width: 100%;
 }
 
 /* buttons  */
@@ -225,3 +229,133 @@ td, .th {
 hr {
     background-color: #EDF2F6;
 }
+
+
+/* navbar  */
+.navbar {
+    background-color: white;
+}
+
+.sidenav {
+    height: 100%;
+    width: 100px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main {
+    margin-left: 100px;
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  /* search bar  */
+  .search-bar {
+    background-color: var(--primary-color) !important;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.277);
+  }
+
+  .input-search {
+    background-color: var(--primary-color) !important;
+    border: none;
+    outline: none;
+    font-size: 0.875rem;
+    min-width: 420px;
+  }
+
+  .input-search::placeholder{
+    color: #737791;
+  }
+  .input-search::selection{
+    color: #737791;
+  }
+
+
+  /* sidebar  */
+  .nav-option {
+    font-size: 0.875rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    padding: 0.8rem;
+    border-radius: .75rem;
+    margin-bottom: 0.65rem;
+    transition: background 0.6s ease, color 0.6s ease, padding 0.2s ease;
+  }
+
+  .nav-option:hover {
+    background-color: var(--bs-accordion-active-bg);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.063);
+    color: var(--body-color);
+    cursor: pointer;
+  }
+
+  .options {
+    display: none;
+  }
+
+  .sidebar-img {
+    display: none;
+  }
+
+  .sidebar-img-visible {
+    display: block;
+    width: 80%;
+    margin: 3rem auto 0;
+  }
+
+  .option-text {
+    display: inline-block;
+    text-align: left;
+    margin-left: 2rem;
+  }
+
+  /* notification bell  */
+
+  .notification-bell {
+    padding: 0.57rem 0.875rem;     
+    border-radius: 1rem;
+  }
+
+  .notification-bell:hover {
+    background-color: var(--bs-accordion-active-bg);
+    color: var(--primary-color);
+    cursor: pointer;
+   }
+
+   .admin,.admin-name {
+    font-size: 0.875rem;
+   }
+
+  
