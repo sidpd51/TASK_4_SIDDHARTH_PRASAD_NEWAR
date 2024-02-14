@@ -8,6 +8,7 @@ function checkWindowWidth() {
     // Listen for the window resize event
 window.onresize = checkWindowWidth;
 
+
 function productOne(){
     document.getElementById('product-heading').innerHTML="What is this Product?";
     document.getElementById('product-paragraph').innerHTML="This is product one paragraph. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing.";
@@ -26,11 +27,17 @@ if(performance.navigation.type === 1) {
 
 let isOpen = false;
 let allOptions = document.querySelectorAll(".options")
-let navOptions = document.querySelectorAll(".nav-option")
+let miniIcon = document.querySelectorAll(".sidebar-mini-icon")
 let sidebarImg = document.querySelector(".sidebar-img")
 let screenWidth = window.innerWidth;
 
 // console.log(screenWidth)
+
+if(screenWidth<550){
+    miniIcon.forEach(option => {
+        option.classList.remove('fa-xl')    
+    })
+}
 
 function toggleSidebar(){
     if(!isOpen){
@@ -38,8 +45,8 @@ function toggleSidebar(){
             document.getElementById("mySidenav").style.width = "230px";
             document.getElementById("main").style.marginLeft = "230px";
         } else {
-            document.getElementById("mySidenav").style.width = "180px";
-            document.getElementById("main").style.marginLeft = "180px";
+            document.getElementById("mySidenav").style.width = "130px";
+            document.getElementById("main").style.marginLeft = "130px";
         }
         allOptions.forEach(option => {
             option.classList.add('option-text');
@@ -52,8 +59,8 @@ function toggleSidebar(){
             document.getElementById("mySidenav").style.width = "100px";
             document.getElementById("main").style.marginLeft= "100px";
         } else {
-            document.getElementById("mySidenav").style.width = "80px";
-            document.getElementById("main").style.marginLeft= "80px";    
+            document.getElementById("mySidenav").style.width = "70px";
+            document.getElementById("main").style.marginLeft= "70px";    
         }
         allOptions.forEach(option => {
             option.classList.remove('option-text');
