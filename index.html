@@ -19,42 +19,42 @@
     <!-- navbar  -->
 
     <!-- Sidebar Header and Navigation Options -->
-    <aside id="mySidenav" class="sidenav px-lg-4 py-lg-3 px-3 py-2">
-      <div class="brand-info d-flex  mb-4 ">
-        <span class="icon"><img src="./assets/images/brand-logo.png" alt=""></span>
-        <span class="options fs-5 fw-semibold ms-3">Debang</span>
+    <aside id="mySidenav" class="sidenav px-lg-4 py-lg-3 px-3 py-3">
+      <div class="brand-info d-flex  mb-lg-4 m-sm-2 mt-sm-3 m-lg-0">
+        <span class="icon"><img class="brand-icon" src="./assets/images/brand-logo.png" alt=""></span>
+        <span class="options fs-5 fw-semibold ms-lg-3 ms-2 debang">Debang</span>
       </div>
       <div class="sidebar-header">
         <div class="nav-option">
-          <span class="icon"><i class="fa-solid fa-chart-pie fa-xl"></i></span>
+          <span class="icon"><i class="fa-solid fa-chart-pie fa-xl sidebar-mini-icon"></i></span>
           <span class="options">Dashboard</span>
         </div>
         <div class="nav-option">
-          <span class="icon"><i class="fa-solid fa-chart-line fa-xl"></i></span>
+          <span class="icon"><i class="fa-solid fa-chart-line fa-xl sidebar-mini-icon"></i></span>
           <span class="options">Leaderboard</span>
         </div>
         <div class="nav-option">
-          <span class="icon"><i class="fa-solid fa-cart-shopping fa-xl"></i></span>
+          <span class="icon"><i class="fa-solid fa-cart-shopping fa-xl sidebar-mini-icon"></i></span>
           <span class="options">Order</span>
         </div>
         <div class="nav-option">
-          <span class="icon"><i class="fa-solid fa-bag-shopping fa-xl"></i></span>
+          <span class="icon"><i class="fa-solid fa-bag-shopping fa-xl sidebar-mini-icon"></i></span>
           <span class="options">Products</span>
         </div>
         <div class="nav-option">
-          <span class="icon"><i class="fa-solid fa-chart-simple fa-xl"></i></span>
+          <span class="icon"><i class="fa-solid fa-chart-simple fa-xl sidebar-mini-icon"></i></span>
           <span class="options">Sales Report</span>
         </div>
         <div class="nav-option">
-          <span class="icon"><i class="fa-regular fa-message fa-xl"></i></span>
+          <span class="icon"><i class="fa-regular fa-message fa-xl sidebar-mini-icon"></i></span>
           <span class="options">Messages</span>
         </div>
         <div class="nav-option">
-          <span class="icon"><i class="fa-solid fa-gear fa-xl"></i></span>
+          <span class="icon"><i class="fa-solid fa-gear fa-xl sidebar-mini-icon"></i></span>
           <span class="options">Settings</span>
         </div>
         <div class="nav-option">
-          <span class="icon"><i class="fa-solid fa-arrow-right-from-bracket fa-xl"></i></span>
+          <span class="icon"><i class="fa-solid fa-arrow-right-from-bracket fa-xl sidebar-mini-icon"></i></span>
           <span class="options">Sign Out</span>
         </div>
       </div>
@@ -65,10 +65,10 @@
 
     <div id="main" class="p-0">
       <!-- nav bar  -->
-      <nav class="navbar py-3 position-sticky  top-0 start-0 end-0">
-        <div class="container-fluid  justify-content-between ">
+      <nav class="navbar py-2 py-lg-3 position-sticky  top-0 start-0 end-0">
+        <div class="container-fluid p-sm-0 justify-content-between gap-0 px-0">
           <button
-            class="btn p-1"
+            class="btn px-0 p-lg-1"
             type="button"
             onclick="toggleSidebar()"
             aria-controls="navbarNavAltMarkup"
@@ -81,7 +81,7 @@
 
             <!-- search-bar  -->
             <form
-              class="d-flex justify-content-between rounded-5 py-lg-3 px-lg-4 p-2 search-bar me-lg-5 me-1"
+              class="d-flex justify-content-between rounded-5 py-lg-3 px-lg-4 p-2 search-bar flex-nowrap  me-lg-5 me-1"
             >
               <label for="search">
                 <i
@@ -107,17 +107,17 @@
 
             <!-- user section  -->
             <div class="user-section d-flex me-2">
-              <img class="img-fluid " src="./assets/images/admin-pic.png" alt="" width="40" height="40">
+              <img class="img-fluid admin-img" src="./assets/images/admin-pic.png" alt="admin-img" >
               <!-- Example split danger button -->
               <div class="btn-group py-0 pe-md-5 border-0 outline">
-                <button type="button" class="btn border-0 fs-6"><span class="admin-name">Sid pd.</span> <span class="admin d-block ">Admin</span></button>
-                <button type="button" class="btn border-0 dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                <button type="button font-mini" class="btn border-0 fs-6"><span class="admin-name font-mini">Sid pd.</span> <span class="admin d-block font-mini">Admin</span></button>
+                <button type="button font-mini" class="btn border-0 dropdown-toggle dropdown-toggle-split px-0 px-lg-1" data-bs-toggle="dropdown" aria-expanded="false"></button>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item fw-medium " href="#">Profile</a></li>
+                  <li><a class="dropdown-item fw-medium  font-mini" href="#">Profile</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item fw-medium " href="#">My Account</a></li>
+                  <li><a class="dropdown-item fw-medium  font-mini" href="#">My Account</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item fw-medium " href="#">Log out</a></li>
+                  <li><a class="dropdown-item fw-medium  font-mini" href="#">Log out</a></li>
                 </ul>
               </div>
             </div>
@@ -130,7 +130,7 @@
         <!-- 1st row  -->
         <div class="row mx-4 mb-4 gy-lg-0 gy-4">
           <!-- today's sales -->
-          <div class="col-lg-8 px-0">
+          <div class="col-lg-8 col-md-12 px-0">
             <div
               class="today-sales d-flex align-items-center flex-column justify-content-between rounded-4 shadow p-3"
             >
@@ -216,8 +216,8 @@
             </div>
           </div>
           <!-- visitor insights  -->
-          <div class="col-lg-4 px-0">
-            <div class="visitor-insights rounded-4 shadow ms-lg-4 p-3">
+          <div class="col-lg-4 col-md-12 px-0">
+            <div class="visitor-insights rounded-4 shadow ms-lg-4 p-3 h-100">
               <h5 class="h5 p-3 fw-semibold">Visitor Insights</h5>
               <div class="accordion accordion-flush z-0" id="accordionFlushExample">
                 <!-- 1st item  -->
@@ -536,14 +536,14 @@
           </div>
           <!-- col 2  -->
           <div class="col-lg-3 px-0">
-            <div class="rounded-4 shadow sales-mapping ms-lg-4 p-4 h-100">
+            <div class="rounded-4 shadow sales-mapping ms-lg-4 p-4 h-100 d-flex justify-content-center flex-column">
               <h5 class="h5 pt-2 pb-3 fw-semibold">Sales Mapping by Country</h5>
               <img class="img-fluid" src="./assets/images/world.png" alt="" />
             </div>
           </div>
           <!-- col 3  -->
           <div class="col-lg-3 px-0 h-100">
-            <div class="rounded-4 shadow sales-mapping ms-lg-4 p-4 ">
+            <div class="rounded-4 shadow sales-mapping ms-lg-4 p-4 d-flex justify-content-center flex-column">
               <h5 class="h5 pt-2 pb-3 fw-semibold">Volume vs Service Level</h5>
               <img class="img-fluid" src="./assets/images/Volume.png" alt="" />
             </div>
