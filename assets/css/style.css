@@ -40,7 +40,7 @@
     --progress-bar-4: #FF8F0D;
     --progress-bar-4-2: #FFD5A4; 
 
-    --search-bar-shadow: #00000032;
+    --search-bar-shadow: #00000010;
 }
 
 body {
@@ -227,9 +227,9 @@ td, .th {
 
 /* main product section  */
 
-.product-btn-1 {
-    background-color: var(--bs-accordion-active-bg);
-    color: var(--primary-color);
+.nav-link.active{
+    background-color: var(--bs-accordion-active-bg) !important;
+    color: var(--body-color) !important;
 }
 
 .product-paragraph {
@@ -238,6 +238,8 @@ td, .th {
 }
 
 .read-more {
+    background-color: var(--bs-accordion-active-bg);
+    color: white;
     font-size: 0.75rem;
 }
 
@@ -325,7 +327,8 @@ hr {
     font-weight: 500;
     display: flex;
     align-items: center;
-    padding: 0.8rem;
+    justify-content: center !important;
+    padding: 1.2rem 0.4rem;
     border-radius: .75rem;
     margin-bottom: 0.65rem;
     transition: background 0.6s ease, color 0.6s ease, padding 0.2s ease;
@@ -351,6 +354,8 @@ hr {
     width: 90%;
     margin: 3rem auto 0;
   }
+
+
 
   .option-text {
     display: inline-block;
@@ -387,75 +392,120 @@ hr {
   }
 
    @media only screen and (max-width: 550px) {
-    .search-bar {
-        width: 20%;
-    }
-    
-    .input-search {
-        display: none;
+    .today-sales-heading {
+        flex-direction: column;
     }
    }
 
 
-   @media only screen and (max-width: 850px) {
-    .options {
-        font-size: 0.60rem;
-    }
-    .option-text {
-        margin-left: 1rem;
-    }
+   @media only screen and (max-width: 950px) {
+        .options {
+            font-size: 0.60rem;
+        }
+        .option-text {
+            margin-left: 1rem;
+        }
 
-    .debang {
-        font-size: 0.8rem !important;
-    }
+        .debang {
+            font-size: 0.8rem !important;
+        }
 
-    .brand-icon {
-        height: 40px;
-        width: 40px;
-    }
+        .brand-icon {
+            height: 40px;
+            width: 40px;
+        }
 
-    .navbar {
-        padding: 0;
-    }
-    .sidebar-header {
-        margin-top: 2rem;
-    }
-    .nav-option {
-        padding: 0.5rem;
-    }
+        .navbar {
+            padding: 0;
+        }
+        .sidebar-header {
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .nav-option {
+            padding: 0.5rem;
+        }
+        .brand-info{
+            justify-content: center;
+        }
 
-    .sidenav {
-        width: 70px;
-    }
+        .sidenav {
+            width: 70px;
+        }
+        
+        #main {
+            margin-left: 70px;
+        }
+
+        .notification-bell {
+            padding: 0.257rem 0.55rem;     
+            border-radius: 1rem;
+        }
+
+        .admin-img {
+            width: 35px;
+            height: 35px;
+        }
+
+        .dropdown-menu {
+            width: 50px;
+        }
+
+        .font-mini {
+            font-size: 0.65rem !important;
+        }
+
+        .option-text {
+            margin-left: 0.5rem;
+        }
+
+        .table {
+            font-size: 8px;
+        }
+
+        .col-title {
+            font-size: 1rem !important;
+        }
+
+        .col-subtitle-1 {
+            font-size: 0.75rem;
+        }
+
+        .col-subtitle-2 {
+            font-size: 0.55rem;
+        }
+
+        .search-bar {
+            width: 15%;
+            display: inline-block;
+            box-shadow: none;
+            background-color: white;
+        }
+        
+        .input-search {
+            display: none !important;
+        }
     
-    #main {
-        margin-left: 70px;
-    }
+        .btn-group {
+            display: none !important;
+        }
 
-    .notification-bell {
-        padding: 0.257rem 0.55rem;     
-        border-radius: 1rem;
+        .table-pgh {
+            font-size: 0.875rem;
+        }
+        
     }
-
-    .admin-img {
-        width: 35px;
-        height: 35px;
-    }
-
-    .dropdown-menu {
-        width: 50px;
-    }
-
-    .font-mini {
-        font-size: 0.65rem !important;
-    }
-
-    .option-text {
-        margin-left: 0.5rem;
-    }
-
-  }
 
   .sidebar-header {
     margin: 0 auto;
+  }
+
+  .center-element{
+    justify-content: flex-start !important;
+  }
+
+  .accordion-button::after{
+    filter: invert(150%);
   }

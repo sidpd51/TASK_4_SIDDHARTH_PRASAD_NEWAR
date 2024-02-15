@@ -28,6 +28,8 @@ if(performance.navigation.type === 1) {
 let isOpen = false;
 let allOptions = document.querySelectorAll(".options")
 let miniIcon = document.querySelectorAll(".sidebar-mini-icon")
+let navOptions = document.querySelectorAll(".nav-option")
+let brandInfo = document.querySelector(".brand-info")
 let sidebarImg = document.querySelector(".sidebar-img")
 let screenWidth = window.innerWidth;
 
@@ -51,7 +53,13 @@ function toggleSidebar(){
         allOptions.forEach(option => {
             option.classList.add('option-text');
         });
-        sidebarImg.classList.add('sidebar-img-visible')
+        navOptions.forEach(option => {
+            option.classList.add('center-element');
+        });
+
+        sidebarImg.classList.add('sidebar-img-visible');
+
+        brandInfo.classList.add('center-element');
         isOpen= true
 
     }else {
@@ -65,7 +73,13 @@ function toggleSidebar(){
         allOptions.forEach(option => {
             option.classList.remove('option-text');
         });
-        sidebarImg.classList.remove('sidebar-img-visible')
+        navOptions.forEach(option => {
+            option.classList.remove('center-element');
+        });
+
+        sidebarImg.classList.remove('sidebar-img-visible');
+
+        brandInfo.classList.remove('center-element');
        
         isOpen=false
     }
