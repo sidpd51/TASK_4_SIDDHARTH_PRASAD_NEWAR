@@ -295,6 +295,7 @@ hr {
   .search-bar {
     background-color: var(--primary-color) !important;
     box-shadow: 5px 5px 10px var(--search-bar-shadow);
+    width: 30%;
   }
 
   .input-search {
@@ -302,7 +303,7 @@ hr {
     border: none;
     outline: none;
     font-size: 0.875rem;
-    width: 380px;
+    max-width: 90%;
   }
 
   .input-search::placeholder{
@@ -392,7 +393,6 @@ hr {
     
     .input-search {
         display: none;
-        width: 40px;
     }
    }
 
@@ -454,4 +454,8 @@ hr {
         margin-left: 0.5rem;
     }
 
+  }
+
+  .sidebar-header {
+    margin: 0 auto;
   }
